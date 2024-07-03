@@ -38,10 +38,10 @@ ALTER USER 'sys_test'@'localhost' IDENTIFIED WITH mysql_native_password BY 'pass
 1.8. При работе в IDE сформируйте ER-диаграмму получившейся базы данных. При работе в командной строке используйте команду для получения всех таблиц базы данных. (скриншот)
 
 Результатом работы должны быть скриншоты обозначенных заданий, а также простыня со всеми запросами.
-![Image alt]()
-![Image alt]()
-![Image alt]()
-![Image alt]()
+![Image alt](https://github.com/niko0la/-DDL-DML-/blob/main/1-1.png)
+![Image alt](https://github.com/niko0la/-DDL-DML-/blob/main/1-2.png)
+![Image alt](https://github.com/niko0la/-DDL-DML-/blob/main/1-3.png)
+![Image alt](https://github.com/niko0la/-DDL-DML-/blob/main/1-4.png)
 Задание 2
 Составьте таблицу, используя любой текстовый редактор или Excel, в которой должно быть два столбца: в первом должны быть названия таблиц восстановленной базы, во втором названия первичных ключей этих таблиц. Пример: (скриншот/текст)
 
@@ -49,8 +49,8 @@ ALTER USER 'sys_test'@'localhost' IDENTIFIED WITH mysql_native_password BY 'pass
 customer         | customer_id
 Дополнительные задания (со звёздочкой*)
 Эти задания дополнительные, то есть не обязательные к выполнению, и никак не повлияют на получение вами зачёта по этому домашнему заданию. Вы можете их выполнить, если хотите глубже шире разобраться в материале.
-![Image alt]()
-![Image alt]()
+![Image alt](https://github.com/niko0la/-DDL-DML-/blob/main/2-1.png)
+![Image alt](https://github.com/niko0la/-DDL-DML-/blob/main/2-2.png)
 Задание 3*
 3.1. Уберите у пользователя sys_temp права на внесение, изменение и удаление данных из базы sakila.
 
