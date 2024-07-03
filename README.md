@@ -48,12 +48,12 @@ ALTER USER 'sys_test'@'localhost' IDENTIFIED WITH mysql_native_password BY 'pass
 ![Image alt](https://github.com/niko0la/-DDL-DML-/blob/main/1-3.png)
 ![Image alt](https://github.com/niko0la/-DDL-DML-/blob/main/1-4.png)
 
-$ sudo -i
-# apt update
-# apt install mysql-server mysql-client
-# mysqladmin password -u root -p
-# mysql_secure_installation
-# mysql -u root -p
+ $ sudo -i
+-# apt update
+-# apt install mysql-server mysql-client
+-# mysqladmin password -u root -p
+-# mysql_secure_installation
+-# mysql -u root -p
 mysql> CREATE USER 'sys_test'@'localhost' IDENTIFIED BY 'password';
 mysql> SELECT user,authentication_string,plugin,host FROM mysql.user;
 mysql> GRANT ALL PRIVILEGES ON *.* TO 'sys_test'@'localhost';
