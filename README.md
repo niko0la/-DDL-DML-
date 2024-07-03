@@ -49,30 +49,30 @@ ALTER USER 'sys_test'@'localhost' IDENTIFIED WITH mysql_native_password BY 'pass
 ![Image alt](https://github.com/niko0la/-DDL-DML-/blob/main/1-4.png)
 
 $ sudo -i
-#apt update
-#apt install mysql-server mysql-client
-#mysqladmin password -u root -p
-#mysql_secure_installation
-#mysql -u root -p
+# apt update
+# apt install mysql-server mysql-client
+# mysqladmin password -u root -p
+# mysql_secure_installation
+# mysql -u root -p
 mysql> CREATE USER 'sys_test'@'localhost' IDENTIFIED BY 'password';
 mysql> SELECT user,authentication_string,plugin,host FROM mysql.user;
 mysql> GRANT ALL PRIVILEGES ON *.* TO 'sys_test'@'localhost';
 mysql> show grants for 'sys_test'@'localhost';
 mysql> exit
-#mysql -u sys_test -p
+# mysql -u sys_test -p
 mysql> SELECT user();
 mysql> exit
-#wget https://downloads.mysql.com/docs/sakila-db.zip
-#apt install unzip
-#unzip sakila-db.zip
-#mysql -u sys_test -p
+# wget https://downloads.mysql.com/docs/sakila-db.zip
+# apt install unzip
+# unzip sakila-db.zip
+# mysql -u sys_test -p
 mysql> CREATE DATABASE `sakila`;
 mysql> SHOW DATABASES;
 mysql> exit
-#export DBNAME=sakila
-#mysql -u sys_test -p ${DBNAME} < /root/sakila-db/sakila-schema.sql
-#mysql -u sys_test -p ${DBNAME} < /root/sakila-db/sakila-data.sql
-#mysql -u sys_test -p
+# export DBNAME=sakila
+# mysql -u sys_test -p ${DBNAME} < /root/sakila-db/sakila-schema.sql
+# mysql -u sys_test -p ${DBNAME} < /root/sakila-db/sakila-data.sql
+# mysql -u sys_test -p
 mysql> SHOW DATABASES;
 mysql> USE sakila;
 mysql> SHOW TABLES;
